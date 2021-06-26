@@ -2,9 +2,9 @@
   "name": "svelte-horizontal-scroller",
   "version": "1.0.0",
   "repository": "github:nicolasmgaray/svelte-horizontal-scroller",
-  "license" : "MIT",
+  "license": "MIT",
   "svelte": "src/index.js",
-    "module": "dist/index.mjs",
+  "module": "dist/index.mjs",
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
