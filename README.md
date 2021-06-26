@@ -7,6 +7,14 @@ A pretty straightforward, simple, and unstyled Horizontal Scroller for Svelte.
 
 Support for mobile touch, and cursor drag & drop.
 
+#### Drag & Drop
+
+![DragAndDrop](./docs/DragAndDrop.gif)
+
+#### Touch
+
+![Touch](./docs/Touch.gif)
+
 ## Demo
 
 [SVELTE REPL](https://svelte.dev/repl/d37e9362f2284ea0a5bcd7011005ee19?version=3.38.3)
