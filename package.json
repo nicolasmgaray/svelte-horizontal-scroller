@@ -1,6 +1,6 @@
 {
   "name": "svelte-horizontal-scroller",
-  "version": "0.9.6",
+  "version": "1.0.0",
   "repository": "github:nicolasmgaray/svelte-horizontal-scroller",
   "license" : "MIT",
   "svelte": "src/index.js",
