@@ -1,34 +1,13 @@
-*Psst — looking for an app template? Go here --> [sveltejs/template](https://github.com/sveltejs/template)*
+# svelte-horizontal-scroller
 
----
+A pretty strightforward, simple, and unstyled Horizontal Scroller for Svelte.
 
-# component-template
-
-A base for building shareable Svelte components. Clone it with [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/component-template my-new-component
-cd my-new-component
-npm install # or yarn
-```
-
-Your component's source code lives in `src/Component.svelte`.
-
-You can create a package that exports multiple components by adding them to the `src` directory and editing `src/index.js` to reexport them as named exports.
-
-TODO
-
-* [ ] some firm opinions about the best way to test components
-* [ ] update `degit` so that it automates some of the setup work
+Support for mobile, and dekstop drag & drop.
 
 
-## Setting up
+## Demo
 
-* Run `npm init` (or `yarn init`)
-* Replace this README with your own
-
-
-## Consuming components
+[https://svelte.dev/repl/d37e9362f2284ea0a5bcd7011005ee19?version=3.38.3](https://svelte.dev/repl/d37e9362f2284ea0a5bcd7011005ee19?version=3.38.3)
 
 Your package.json has a `"svelte"` field pointing to `src/index.js`, which allows Svelte apps to import the source code directly, if they are using a bundler plugin like [rollup-plugin-svelte](https://github.com/sveltejs/rollup-plugin-svelte) or [svelte-loader](https://github.com/sveltejs/svelte-loader) (where [`resolve.mainFields`](https://webpack.js.org/configuration/resolve/#resolve-mainfields) in your webpack config includes `"svelte"`). **This is recommended.**
 
