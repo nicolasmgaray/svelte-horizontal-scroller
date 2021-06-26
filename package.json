@@ -1,6 +1,6 @@
 {
   "name": "svelte-horizontal-scroller",
-  "version": "0.0.1",
+  "version": "0.9.0",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",

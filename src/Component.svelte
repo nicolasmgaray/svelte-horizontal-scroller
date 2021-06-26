@@ -28,14 +28,14 @@
     function mouseDownHandler(e) {
         // Set initial scroll and mouse position
         pos = {
-            left: horizontalScroll.scrollLeft,
+            left: horizontalScroller.scrollLeft,
             x: e.clientX,
         };
         // Remove CSS styles
-        horizontalScroll.style.scrollBehavior = 'auto';
-        horizontalScroll.style.cursor = 'grabbing';
-        horizontalScroll.style.userSelect = 'none';
-        horizontalScroll.style.scrollSnapType = 'none';
+        horizontalScroller.style.scrollBehavior = 'auto';
+        horizontalScroller.style.cursor = 'grabbing';
+        horizontalScroller.style.userSelect = 'none';
+        horizontalScroller.style.scrollSnapType = 'none';
         // Add handlers
         document.addEventListener('mousemove', mouseMoveHandler);
         document.addEventListener('mouseup', mouseUpHandler);
@@ -46,16 +46,16 @@
         document.removeEventListener('mousemove', mouseMoveHandler);
         document.removeEventListener('mouseup', mouseUpHandler);
         // Restore css
-        horizontalScroll.style.scrollSnapType = 'x mandatory';
-        horizontalScroll.style.cursor = 'grab';
-        horizontalScroll.style.removeProperty('user-select');
-        horizontalScroll.style.scrollBehavior = 'smooth';
+        horizontalScroller.style.scrollSnapType = 'x mandatory';
+        horizontalScroller.style.cursor = 'grab';
+        horizontalScroller.style.removeProperty('user-select');
+        horizontalScroller.style.scrollBehavior = 'smooth';
     };
 
     function mouseMoveHandler(e) {
         // Update scroll based on mouse movement
         const dx = e.clientX - pos.x;
-        horizontalScroll.scrollLeft = pos.left - dx;
+        horizontalScroller.scrollLeft = pos.left - dx;
     };
 </script>
 
