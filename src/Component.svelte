@@ -1,5 +1,5 @@
 <style>
-    .HorizontalScroll {
+    .HorizontalScroller {
         width: var(--horizontal-scroller-width, auto);
         cursor: grab;
         scroll-snap-type: x mandatory;
@@ -11,18 +11,18 @@
         gap: var(--horizontal-scroller-gap, 1em);
     }
 
-    .HorizontalScroll::-webkit-scrollbar {
+    .HorizontalScroller::-webkit-scrollbar {
         display: none;
     }
 
-    .HorizontalScroll > :global(*) {
+    .HorizontalScroller > :global(*) {
         flex-grow: 0;
         flex-shrink: 0;
     }
 </style>
 
 <script>
-    let horizontalScroll;
+    let horizontalScroller;
     let pos = { left: 0, x: 0 };
 
     function mouseDownHandler(e) {
@@ -59,8 +59,8 @@
     };
 </script>
 
-<div class="HorizontalScroll"
+<div class="HorizontalScroller"
      on:mousedown={mouseDownHandler}
-     bind:this={horizontalScroll}>
+     bind:this={horizontalScroller}>
     <slot/>
 </div>
